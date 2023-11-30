@@ -2,7 +2,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const html5QrCode = new Html5Qrcode("reader");
     function onScanSuccess(decodedText, decodedResult) {
         console.log(`Code matched = ${decodedText}`, decodedResult);
-        alert(`Code matched = ${decodedText}`);
+        Swal.fire({
+            title: "Code Matched",
+            text: (`${decodedText}`),
+            icon: "info"
+        });
     }
 function onScanFailure(error) {
     console.warn(`Code scan error = ${error}`);
