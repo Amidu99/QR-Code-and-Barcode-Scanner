@@ -1,3 +1,15 @@
+body{
+    background-color: #1a1d20;
+    margin: 0;
+}
+h1{
+    color: #08ff00;
+    font-family: "Segoe UI Black", serif;
+    text-align: center;
+    text-shadow: 0 0 2px #19ce05, 0 0 3px #0ee307, 0 0 5px #09ef0d, 0 0 10px #4bf139;
+    position: relative;
+    top: 50px;
+}
 #reader {
     width: 600px;
     margin: auto;
